@@ -14,14 +14,6 @@ class InitialUsersSeeder extends Seeder
      */
     public function run()
     {
-        // seed the root admin
-        User::create([
-            "name" => "Admin",
-            "email" => "admin@admin.com",
-            "password" => Hash::make("123456789"),
-            "role" => "admin",
-            "email_verified_at" => now(),
-        ]);
 
         // seed company-owner 1
         User::create([
